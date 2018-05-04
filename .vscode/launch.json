@@ -5,9 +5,31 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch test1.js",
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "debug"
+            ],
+            "port": 9229
+        },
+        {
+            "name": "Launch test2.js",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "debug"
+            ],
+            "port": 9229
+        },
+        {
+            "name": "Launch express server",
+            "type": "node",
+            "request": "launch",
             "program": "${workspaceFolder}/bin/www"
         }
     ]
